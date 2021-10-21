@@ -1,0 +1,163 @@
+/* Variables */
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+/* Main Styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-bottom: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    background-color: var(--violet);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 2.25rem;
+    color: #fff;
+    margin: auto;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 8rem;
+    padding-bottom: 3.25rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.flex__right {
+    padding-top: 3.5rem;
+}
+
+.btn {
+    background-color: #fff;
+    color: var(--violet);
+    border-style: none;
+    padding: 0.625rem 4.5rem;
+    border-radius: 25px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 1px 4px 6px hsl(257, 46%, 35%);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--soft-magenta);
+    color: #fff;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5rem;
+}
+
+.social__icon {
+    margin: 0 0.5rem;
+    border: 1px #fff solid;
+    font-size: 1rem;
+}
+
+.social__icon:hover {
+    cursor: pointer;
+    color: var(--soft-magenta);
+    border-color: var(--soft-magenta);
+}
+
+.social__icon--fb {
+    padding: 14px 10px;
+    border-radius: 20px;
+}
+
+.social__icon--tw {
+    padding: 14px 7px;
+    border-radius: 20px;
+}
+
+.social__icon--ig {
+    padding: 14px 8px;
+    border-radius: 20px;
+}
+
+/* Media Queries */
+
+@media  screen and (min-width:769px){
+
+    .container {
+        background-image: url(../images/bg-desktop.svg);
+        background-size: cover;
+        background-position: center;
+        padding: 3.5rem;
+    }
+
+    .logo {
+        width: 14rem;
+    }
+
+    .flex {
+        flex-direction: row;
+        align-items: top;
+        gap: 2rem;
+        text-align: left;
+        padding-top: 3rem;
+    }
+
+    .flex__left {
+        width: 60%;
+    }
+
+    .flex__right {
+        width: 35%;
+    }
+
+    .illustration {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding-right: 3rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .btn {
+        padding: 1rem 4rem;
+    }
+
+    .social {
+        position: absolute;
+        bottom: 2rem;
+        right: 3rem;
+    }
+
+}
