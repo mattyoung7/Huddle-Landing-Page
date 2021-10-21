@@ -125,11 +125,11 @@ img {
         align-items: top;
         gap: 2rem;
         text-align: left;
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
 
     .flex__left {
-        width: 60%;
+        width: 55%;
     }
 
     .flex__right {
@@ -141,8 +141,8 @@ img {
     }
 
     h1 {
-        font-size: 2rem;
-        padding-right: 3rem;
+        font-size: 2.5rem;
+        padding-right: 1.5rem;
     }
 
     p {
